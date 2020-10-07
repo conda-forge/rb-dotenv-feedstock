@@ -5,11 +5,13 @@ Home: https://rubygems.org/gems/dotenv
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rb-dotenv-feedstock/blob/master/LICENSE.txt)
 
 Summary: Ruby gem to load environment variables from `.env`
 
+Development: https://github.com/bkeepers/dotenv
 
+Documentation: https://www.rubydoc.info/gems/dotenv
 
 Current build status
 ====================
