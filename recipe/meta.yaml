@@ -25,7 +25,7 @@ requirements:
 
 test:
   commands:
-    - ruby -r dotenv -e 'exit 0'
+    - ruby -r {{ name }} -e 'exit 0'
     - dotenv --help
 
 about:
