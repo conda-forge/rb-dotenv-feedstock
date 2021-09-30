@@ -21,10 +21,11 @@ requirements:
   host:
     - ruby
   run:
-    - ruby
+    - {{ pin_compatible('ruby', max_pin='x.x') }}
 
 test:
   commands:
+    - ruby -r dotenv -e 'exit 0'
     - dotenv -V
 
 about:
