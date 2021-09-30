@@ -1,5 +1,5 @@
 {% set name = "dotenv" %}
-{% set version = "2.7.5" %}
+{% set version = "2.7.6" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -41,5 +41,4 @@ extra:
   recipe-maintainers:
     - sodre
     - rluria14
-    - adbeda
-    - agcopenhaver
+    - mxr-conda
