@@ -25,7 +25,9 @@ requirements:
 
 test:
   commands:
-    - ruby -r {{ name }} -e 'exit 0'
+    - ruby -r dotenv -e 'exit 0'
+    - dotenv --help
+    - dotenv -V
 
 about:
   home: https://rubygems.org/gems/{{ name }}
