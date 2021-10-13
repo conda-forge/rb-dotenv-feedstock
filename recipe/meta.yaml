@@ -1,5 +1,5 @@
 {% set name = "dotenv" %}
-{% set version = "2.7.5" %}
+{% set version = "2.7.6" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: c5465769f188f96a62a6cc1f801f440af077b06b788a14f66760a5178569139e
+  sha256: 2451ed5e8e43776d7a787e51d6f8903b98e446146c7ad143d5678cc2c409d547 
 
 build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
+    - gem install -N -l -V --norc --ignore-dependencies -n $PREFIX/bin {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
@@ -21,7 +21,7 @@ requirements:
   host:
     - ruby
   run:
-    - ruby
+    - {{ pin_compatible('ruby', max_pin='x.x') }}
 
 test:
   commands:
@@ -40,6 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - sodre
-    - rluria14
-    - adbeda
-    - agcopenhaver
+    - mxr-conda
