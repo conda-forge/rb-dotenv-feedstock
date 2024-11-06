@@ -1,5 +1,5 @@
 {% set name = "dotenv" %}
-{% set version = "2.7.6" %}
+{% set version = "2.8.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 2451ed5e8e43776d7a787e51d6f8903b98e446146c7ad143d5678cc2c409d547 
+  sha256: 8e55d16ba642f18583ebb7a7d9e85c44f77985ba94dc858b18e1ca0fd2bce97f
 
 build:
   noarch: generic
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: {{ name }}-{{ version }}/LICENSE
-  summary: 'Ruby gem to load environment variables from `.env`'
+  summary: Ruby gem to load environment variables from `.env`
   doc_url: https://www.rubydoc.info/gems/{{ name }}
   dev_url: https://github.com/bkeepers/dotenv
 
