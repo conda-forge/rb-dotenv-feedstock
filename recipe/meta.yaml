@@ -1,5 +1,5 @@
 {% set name = "dotenv" %}
-{% set version = "2.7.6" %}
+{% set version = "3.0.1" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 2451ed5e8e43776d7a787e51d6f8903b98e446146c7ad143d5678cc2c409d547 
+  sha256: 7f451078125761f7450b6bf60862ab7f9dc17b5e6ba96197b174d9330a81ec0d
 
 build:
   noarch: generic
